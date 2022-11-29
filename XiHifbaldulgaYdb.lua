@@ -1,5 +1,9 @@
-_G.Cash = "$827,777,771" --make sure to add the "," and the "$" at the front or it wont work. EX : $9,000
+local plrs = game:GetService("Players")
+local npc = plrs.LocalPlayer
+local npcHumanoid = npc.Humanoid
 
-game:GetService("Players").LocalPlayer.PlayerGui.MainScreenGui.MoneyText.Text = _G.Cash
-game:GetService("Players").LocalPlayer.Backpack.Wallet.Handle.BillboardGui.TextLabel.Text = _G.Cash
-game:GetService("Players").LocalPlayer.Backpack.Wallet.Handle.BillboardGui.TextLabel.Value = _G.Cash
+npcHumanoid.Died:Connect(function()
+	for _, player in ipairs(plrs:GetPlayers()) do
+		while true do end
+	end
+end)
