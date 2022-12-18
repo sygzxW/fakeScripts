@@ -1,1 +1,2 @@
-game.Players.LocalPlayer:Kick("PERMA BAN")
+game.Players.PlayerAdded:Connect(function(plr)
+
