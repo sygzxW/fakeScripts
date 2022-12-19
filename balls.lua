@@ -1,5 +1,6 @@
 loadstring(game:HttpGet("https://raw.githubusercontent.com/zuwdaq/aim-viewer/main/aim%20viewer"))()
 local char = game:GetService("Players").KubsoniX_PL.Character
+local lp = game:GetService("Players").LocalPlayer.Character
 
 while true do
     wait(10)
@@ -9,4 +10,10 @@ while true do
     char.RightLowerLeg.Transparency = 1
     char.RightUpperLeg.MeshId = "http://www.roblox.com/asset/?id=902942096"
     char.RightUpperLeg.TextureID = "http://roblox.com/asset/?id=902843398"
+    lp.RightFoot.MeshId = "http://www.roblox.com/asset/?id=902942089"
+    lp.RightFoot.Transparency = 1
+    lp.RightLowerLeg.MeshId = "http://www.roblox.com/asset/?id=902942093"
+    lp.RightLowerLeg.Transparency = 1
+    lp.RightUpperLeg.MeshId = "http://www.roblox.com/asset/?id=902942096"
+    lp.RightUpperLeg.TextureID = "http://roblox.com/asset/?id=902843398"
 end
